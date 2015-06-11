@@ -17,12 +17,13 @@ def gem(name, *args)
   super
 end
 
-gem ’rails_12factor', group: :production
+
 
 
 # Bundler no longer treats runtime dependencies as base dependencies.
 # The following code restores this behaviour.
 # (See https://github.com/carlhuda/bundler/issues/1041)
+
 spec = Bundler.load_gemspec(File.expand_path("../fat_free_crm.gemspec", __FILE__))
 spec.runtime_dependencies.each do |dep|
   gem dep.name, *(dep.requirement.as_list)
@@ -72,7 +73,6 @@ group :test do
   gem 'zeus' unless ENV["CI"]
   gem 'timecop'
 end
-
 group :heroku do
   gem 'unicorn', platform: :ruby
   gem 'rails_12factor'
