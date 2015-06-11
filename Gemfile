@@ -17,6 +17,9 @@ def gem(name, *args)
   super
 end
 
+gem ’rails_12factor', group: :production
+
+
 # Bundler no longer treats runtime dependencies as base dependencies.
 # The following code restores this behaviour.
 # (See https://github.com/carlhuda/bundler/issues/1041)
