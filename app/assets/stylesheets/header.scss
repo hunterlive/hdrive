@@ -4,7 +4,7 @@
 // See MIT-LICENSE file or http://www.opensource.org/licenses/mit-license.php
 //------------------------------------------------------------------------------
 $color_header: skyblue;
-$color_header_background: #1e4262;
+$color_header_background: white;
 $color_logo: hidden;
 $color_tab: white;
 $color_tab_background: #466bb1;
@@ -20,8 +20,9 @@ $color_footer: grey;
 //------------------------------------------------------------------------------
 #header {
   background: $color_header_background;
-  color: $color_header;
+  color: black;
   padding: 8px 16px 8px 16px;
+  min-height:35px;
   h3 a {
     background: $color_header_background;
     color: $color_logo;
@@ -32,15 +33,15 @@ $color_footer: grey;
     float: right;
     font-size: 11px;
     a {
-      color: lightyellow;
+      color: black;
       padding: 1px 4px 2px 4px;
       text-decoration: none;
       &:hover {
         background: $color_header_background;
-        color: yellow; } }
+        color: gray; } }
     a.selected {
       background: steelblue;
-      color: lightyellow;
+      color: red;
       -moz-border-radius: {
         topleft: 2px;
         topright: 2px; };
