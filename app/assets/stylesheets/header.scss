@@ -5,7 +5,7 @@
 //------------------------------------------------------------------------------
 $color_header: skyblue;
 $color_header_background: #1e4262;
-$color_logo: greenyellow;
+$color_logo: hidden;
 $color_tab: white;
 $color_tab_background: #466bb1;
 $color_active_tab: black;
@@ -26,7 +26,8 @@ $color_footer: grey;
     background: $color_header_background;
     color: $color_logo;
     font: normal 15px "Lucida Grande", Arial, Helvetica, sans-serif;
-    text-decoration: none; }
+    text-decoration: none; 
+    visibility:hidden;}
   #welcome {
     float: right;
     font-size: 11px;
@@ -115,6 +116,7 @@ $color_footer: grey;
     text-decoration: none; } }
 
 #footer {
+visibility: hidden;
   color: $color_footer;
   font-size: 10px;
   padding: 0px 0px 0px 16px;

@@ -1,0 +1,16 @@
+{
+  "name": "hdrive",
+  "version": "1.0.0",
+  "description": "[travis-img-url]: https://secure.travis-ci.org/fatfreecrm/fat_free_crm.png?branch=master [travis-ci-url]: http://travis-ci.org/fatfreecrm/fat_free_crm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-haml2html": "^0.3.0"
+  }
+}
